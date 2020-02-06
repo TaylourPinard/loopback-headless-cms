@@ -7,15 +7,22 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "start": "concurrently \"node .\" \"parcel client/Index.html\"",
+    "start": "concurrently \"node .\" \"parcel client/index.html\"",
+    "start-server": "node .",
+    "start-client": "parcel client/index.html",
     "build": "parcel build client/index.html --public-url ./",
     "posttest": "npm run lint && npm audit"
   },
   "dependencies": {
     "axios": "^0.19.1",
     "compression": "^1.0.3",
+    "concurrently": "^5.0.2",
     "cors": "^2.5.2",
     "draft-js": "^0.11.4",
+<<<<<<< HEAD
+=======
+    "draftjs-to-html": "^0.9.1",
+>>>>>>> 18321f912660010b68e2179a708164b89bfea786
     "helmet": "^3.10.0",
     "loopback": "^3.22.0",
     "loopback-boot": "^2.6.5",
@@ -25,6 +32,10 @@
     "parcel-bundler": "^1.12.4",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+<<<<<<< HEAD
+=======
+    "react-draft-wysiwyg": "^1.14.4",
+>>>>>>> 18321f912660010b68e2179a708164b89bfea786
     "react-pell": "^0.4.0",
     "serve-favicon": "^2.0.1",
     "strong-error-handler": "^3.0.0"
